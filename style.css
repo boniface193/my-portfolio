@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;500&display=swap');
 
-/*
-        * this style is my primary style
-            it will include
-            primary color,
-            d-noen,
-            d-flex,
-            justify-content-center,
-            justify-content-between,
-            justify-content-around,
-            weight--700,
-            weight--400,
-            weight--500,
-            align-items-center,
-            align-self-center,
-            align-content-center
-        */
 * {
   margin: 0;
   padding: 0;
@@ -23,8 +7,12 @@
   font-style: normal;
 }
 
-.text-decoration-noon {
-    text-decoration: none;
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.list-style-type-none {
+  list-style-type: none;
 }
 
 .mt-12 {
@@ -100,7 +88,6 @@ this style here is where you should create your
 custom style should incase is not created
 */
 .my-logo {
-  font-style: normal;
   font-size: 18px;
   line-height: 20px;
 }
