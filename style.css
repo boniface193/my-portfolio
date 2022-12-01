@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*
+        * this style is my primary style
+            it will include 
+            primary color, 
+            d-noen, 
+            d-flex,
+            justify-content-center,
+            justify-content-between,
+            justify-content-around,
+            weight--700,
+            weight--400,
+            weight--500,
+            align-items-center,
+            align-self-center,
+            align-content-center
+        */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.weight--400 {
+    font-weight: 400;
+}
+
+.weight--500 {
+    font-weight: 500;
+}
+
+.weight--700 {
+    font-weight: 700;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.text--primary {
+    color: #6070ff;
+}
+
+.text--info {
+    color: #7F8CFF
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    padding: 25px 142px;
+}
+
+.card {
+    height: calc(100vh - 10vh);
+}
+
+.card-title {
+    width: 920px;
+}
+
+/* 
+        this style here is where you should create your
+        custom style should incase is not created
+        */
+.my-logo {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.nav {
+    background-color: #fff;
+    /* box-shadow: 0rem 0rem 1rem #E5E5E5; */
+    height: 72px;
+}
+
+.container .fa-solid {
+    display: none;
+}
+
+.background-image {
+    background-image: url('./assets/images/bg.png');
+    background-repeat: no-repeat;
+    width: auto;
+    background-position: center center;
+    background-size: cover;
+}
+
+.nav-heading {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091E42;
+    width: 50%;
+}
+
+.nav-sub-heading {
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+}
+
+.nav-sub-sub-heading {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fa-brands {
+    margin-right: 17px;
+    font-size: 25px;
+    color: #505F79;
+}
+
+/* medium screen resolution */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding: 26px 80px;
+    }
+}
+
+/* mobile screen resolution */
+@media (max-width: 767px) {
+    .container {
+        padding: 26px 24px;
+    }
+
+    .card {
+        height: 90vh;
+    }
+
+    .nav-heading {
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 0.37px;
+        width: 90%;
+    }
+
+    .container .fa-solid {
+        display: block;
+    }
+}
