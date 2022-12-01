@@ -80,6 +80,12 @@ html
 
 To get a local copy up and running, follow these steps.
 
+git clone https://github.com/boniface193/my-portfolio.git
+
+cd my-portfolio
+
+npm install
+
 ### Prerequisites
 
 In order to run this project you need:
@@ -133,7 +139,7 @@ Ikechukwu
 
 - GitHub: [@boniface193](https://github.com/boniface193)
 - Twitter: [@bidtechnologies](https://twitter.com/bidtechnologies)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/boniface-ikechukwu/)
+- LinkedIn: [boniface-ikechukwu](https://www.linkedin.com/in/boniface-ikechukwu/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

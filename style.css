@@ -23,6 +23,10 @@
   font-style: normal;
 }
 
+.text-decoration-noon {
+    text-decoration: none;
+}
+
 .mt-12 {
   margin-top: 12px;
 }
