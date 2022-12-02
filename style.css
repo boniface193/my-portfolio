@@ -108,20 +108,15 @@
 .card {
   background-color: #fff;
   padding: 16px 16px 24px 16px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .card-sub-title {
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   width: 80%;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
 }
 
 .card-title {
@@ -133,7 +128,7 @@
 .canopy {
   font-size: 13px;
   line-height: 16px;
-  color: #7AB69A;
+  color: #7ab69a;
   margin: 20px 0;
   width: 85%;
 }
@@ -145,7 +140,7 @@
 .dot {
   align-self: center;
   border-radius: 50%;
-  background-color: #C1C7D0;
+  background-color: #c1c7d0;
   width: 8px;
   height: 8px;
 }
@@ -155,7 +150,7 @@ this style here is where you should create your
 custom style should incase is not created
 */
 .background-color {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .my-logo {
@@ -165,6 +160,7 @@ custom style should incase is not created
 
 .nav {
   background-color: #fff;
+
   /* box-shadow: 0rem 0rem 1rem #E5E5E5; */
   height: 72px;
 }
@@ -205,15 +201,6 @@ custom style should incase is not created
   line-height: 16px;
 }
 
-.lang li {
-  background-color: #EBEBFF;
-  letter-spacing: 0.03em;
-  font-size: 12px;
-  color: #6070FF;
-  border-radius: 8px;
-  padding: 6px 12px;
-}
-
 button {
   font-size: 17px;
   line-height: 24px;
@@ -226,26 +213,26 @@ button {
 
 button.btn {
   background-color: #fff;
-  color: #396DF2;
-  border: 1px solid #7f8CFF;
+  color: #396df2;
+  border: 1px solid #7f8cff;
 }
 
 button.btn:hover {
-  background-color: #6070FF;
-  color: #FFF;
-  border: 1px solid #7f8CFF;
+  background-color: #6070ff;
+  color: #fff;
+  border: 1px solid #7f8cff;
 }
 
 button.btn:disabled {
-  background-color: #FFF;
-  color: #5E6C84;
-  border: 1px solid #5E6C84;
+  background-color: #fff;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
 
 button.btn:active {
-  background-color: #2230D2;
+  background-color: #2230d2;
   color: #fff;
-  border: 1px solid #5E6C84;
+  border: 1px solid #5e6c84;
 }
 
 footer {
@@ -261,7 +248,7 @@ footer {
 .footer-sub-title {
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   width: 50%;
 }
 
@@ -274,11 +261,11 @@ footer {
 .language {
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
 .fa-chev {
-  color: #ACB7C3;
+  color: #acb7c3;
 }
 
 .w-50 {
@@ -286,8 +273,7 @@ footer {
 }
 
 .hr {
-  border: 0.3px solid #DFE1E6;
- 
+  border: 0.3px solid #dfe1e6;
 }
 
 aside.w-50 {
@@ -295,7 +281,7 @@ aside.w-50 {
 }
 
 nav ul li {
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   border-radius: 8px;
   padding: 14px;
   margin-top: 12px;
@@ -309,11 +295,24 @@ nav ul li img {
   width: 48px;
   height: 48px;
 }
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
 nav ul li span {
   margin-left: 16px;
 }
 
-
+.lang li {
+  background-color: #ebebff;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
 
 /* medium screen resolution */
 @media (min-width: 768px) and (max-width: 991px) {
