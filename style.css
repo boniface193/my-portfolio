@@ -319,9 +319,10 @@ nav ul li span {
   background-color: #6070ff;
   background-image: url('./assets/images/contact-1.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  padding-top: 125px;
+  background-size: contain;
+  background-position: right;
+  padding: 125px 0 45px 0;
+  margin-top: 113.85px;
 }
 
 .contact-title {
