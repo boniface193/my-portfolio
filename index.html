@@ -240,17 +240,19 @@
                     </aside>
 
                     <aside>
-                        <form action="" method="post" class="contact-form">
+                        <form action="https://formspree.io/f/xknedbwy" method="post" class="contact-form">
                             <div>
-                                <input type="text" required name="fullName" placeholder="your full name" class="weight--400">
+                                <input type="text" maxlength="30" required name="fullName" placeholder="your full name"
+                                    class="weight--400">
                             </div>
                             <div>
                                 <input type="email" required name="email" placeholder="your name" class="weight--400">
                             </div>
                             <div>
-                                <textarea name="msg" required class="weight--400" placeholder="Write your message here"></textarea>
+                                <textarea name="msg" maxlength="500" required class="weight--400"
+                                    placeholder="Write your message here"></textarea>
                             </div>
-                            <button class="btn weight--500">Get in Touch</button>
+                            <button class="btn weight--500" type="submit">Get in Touch</button>
                         </form>
                     </aside>
                 </article>
