@@ -314,6 +314,58 @@ nav ul li span {
   padding: 6px 12px;
 }
 
+.contact-bg-color {
+  border-top-left-radius: 50px;
+  background-color: #6070ff;
+  background-image: url('./assets/images/contact-1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 125px 0 45px 0;
+  margin-top: 113.85px;
+}
+
+.contact-title {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-sub-title {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-form {
+  margin-top: 87px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  height: 30px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.contact-form textarea {
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 15px 16px;
+  line-height: 24px;
+  color: #172b4d;
+  height: 190px;
+}
+
 /* medium screen resolution */
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
