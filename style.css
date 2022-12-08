@@ -183,7 +183,7 @@ custom style should incase is not created
 
 .nav {
   background-color: #fff;
-  box-shadow: 0rem 0rem 1rem #E5E5E5;
+  box-shadow: 0 0 1rem #e5e5e5;
   height: 72px;
 }
 
@@ -295,7 +295,6 @@ footer {
 }
 
 .flex-basis-7 {
-  flex-basis: 676px;
   max-width: 676px;
   flex: auto;
 }
@@ -341,19 +340,6 @@ aside.w-50 {
   flex-direction: row;
 }
 
-.no-nav ul li {
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  padding: 14px;
-  margin: 36px 12px 36px 0;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #253858;
-  flex-direction: column;
-  width: 122px;
-}
-
 nav ul li img {
   width: 48px;
   height: 48px;
@@ -367,7 +353,7 @@ nav ul li img {
 
 .no-nav ul li span {
   margin-top: 16px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .lang li {
@@ -378,6 +364,19 @@ nav ul li img {
   border-radius: 8px;
   padding: 6px 12px;
   margin-right: 8px;
+}
+
+.no-nav ul li {
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 36px 12px 36px 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #253858;
+  flex-direction: column;
+  width: 122px;
 }
 
 .contact-bg-color {
@@ -556,7 +555,6 @@ nav ul li img {
     display: flex;
     flex-direction: column;
     padding: 16px 16px 24px 16px;
-
   }
 
   .card:nth-child(even) {
@@ -629,18 +627,6 @@ nav ul li img {
     margin: 36px 0;
   }
 
-  .no-nav ul li {
-    flex-direction: row;
-    align-items: center;
-    margin: 12px 0px 0 0;
-    width: auto;
-  }
-
-  .no-nav ul li span {
-    margin-top: 0px;
-    margin-left: 16px;
-  }
-
   .language {
     color: #000;
   }
@@ -652,6 +638,18 @@ nav ul li img {
 
   .lang li {
     margin-bottom: 0;
+  }
+
+  .no-nav ul li {
+    flex-direction: row;
+    align-items: center;
+    margin: 12px 0 0 0;
+    width: auto;
+  }
+
+  .no-nav ul li span {
+    margin-top: 0;
+    margin-left: 16px;
   }
 
   .contact-bg-color {
