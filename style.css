@@ -35,8 +35,8 @@
   font-weight: 500;
 }
 
-.weight--600 {
-  font-weight: 600;
+.weight--600--500 {
+  font-weight: 500;
 }
 
 .weight--700 {
@@ -87,6 +87,10 @@
   display: flex;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
 .container {
   padding: 25px 155px;
 }
@@ -96,13 +100,23 @@
 }
 
 .card {
+  max-width: 1156px;
   background-color: #fff;
   padding: 16px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
   flex-direction: row;
-  height: 496px;
+  height: auto;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.card aside {
+  flex-basis: 544px;
+  padding: 0 46px 0 46px;
 }
 
 .card-sub-title {
@@ -113,7 +127,7 @@
 }
 
 .card-title {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
@@ -121,9 +135,8 @@
 .canopy {
   font-size: 18px;
   line-height: 24px;
-  color: #7a869a;
+  color: #6b778c;
   margin: 20px 0;
-  width: 65%;
   font-weight: 500;
 }
 
@@ -137,6 +150,7 @@
   background-color: #c1c7d0;
   width: 8px;
   height: 8px;
+  margin: 0 12px;
 }
 
 /*
@@ -144,21 +158,22 @@ this style here is where you should create your
 custom style should incase is not created
 */
 .background-color {
-  background-color: #e5e5e5;
+  background-color: #f4f5f7;
 }
 
 .background-image {
   height: calc(916px - 92px);
   background-color: #fff;
-  background-image: url('./assets/images/mobile-bg.svg');
+  background-image: url('./assets/images/Header-bg.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   border-bottom-left-radius: 50px;
+  padding: 0 260px;
 }
 
 .container-fluid {
-  padding: 0 260px;
+  max-width: 950px;
 }
 
 .my-logo {
@@ -184,7 +199,7 @@ custom style should incase is not created
   color: #344563;
 }
 
-.container .fa-solid {
+.container .fa-bars {
   display: none;
 }
 
@@ -193,7 +208,7 @@ custom style should incase is not created
   line-height: 60px;
   letter-spacing: 0.37px;
   color: #091e42;
-  width: 39%;
+  width: 53.5%;
 }
 
 .nav-sub-heading {
@@ -216,12 +231,14 @@ custom style should incase is not created
 .row {
   display: grid;
   grid-template-rows: auto;
-  row-gap: 88px;
+  row-gap: 142px;
+  justify-content: center;
+  margin-bottom: 142px;
 }
 
 .lang {
-  width: 70%;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
   padding: 25px 0;
   line-height: 16px;
 }
@@ -262,12 +279,29 @@ button.btn:active {
 
 footer {
   background-color: #fff;
-  margin-top: calc(114px - 26px);
   border-top-right-radius: 50px;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-basis-5 {
+  flex-basis: 447px;
+  padding-right: 37px;
+}
+
+.flex-basis-7 {
+  flex-basis: 676px;
+  max-width: 676px;
+  flex: auto;
+}
+
 .pt-114 {
-  padding: 114px 0 0 0;
+  padding: 142px 0 0 0;
 }
 
 .footer-sub-title {
@@ -280,21 +314,17 @@ footer {
 .footer-title {
   font-size: 16px;
   line-height: 24px;
-  color: #344534;
+  color: #344563;
 }
 
 .language {
   font-size: 20px;
   line-height: 24px;
-  color: #000;
+  color: #344563;
 }
 
 .fa-chev {
   color: #acb7c3;
-}
-
-.w-50 {
-  width: 90%;
 }
 
 .hr {
@@ -302,18 +332,26 @@ footer {
 }
 
 aside.w-50 {
-  padding: 30px 0;
+  margin: 23px 0;
+  width: 90%;
+}
+
+.no-nav ul {
+  display: flex;
+  flex-direction: row;
 }
 
 .no-nav ul li {
   background-color: #f7f7f9;
   border-radius: 8px;
   padding: 14px;
-  margin-top: 12px;
+  margin: 36px 12px 36px 0;
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
   color: #253858;
+  flex-direction: column;
+  width: 122px;
 }
 
 nav ul li img {
@@ -322,13 +360,14 @@ nav ul li img {
 }
 
 .card img {
-  width: auto;
-  height: auto;
-  padding-right: 46px;
+  width: 544px;
+  height: 448px;
+  flex-basis: 544px;
 }
 
-nav ul li span {
-  margin-left: 16px;
+.no-nav ul li span {
+  margin-top: 16px;
+  margin-left: 0px;
 }
 
 .lang li {
@@ -338,43 +377,42 @@ nav ul li span {
   color: #6070ff;
   border-radius: 8px;
   padding: 6px 12px;
+  margin-right: 8px;
 }
 
 .contact-bg-color {
   border-top-left-radius: 50px;
   background-color: #6070ff;
-  background-image: url('./assets/images/contact-1.svg');
+  background-image: url('./assets/images/contact-form1.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
-  padding: 125px 0 45px 0;
-  margin-top: 113.85px;
-}
-
-.contact-form {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+  background-position: center center;
+  padding: 142px 0 127px 0;
+  margin-top: 140px;
 }
 
 .contact-title {
   font-size: 40px;
   line-height: 50px;
-  text-align: center;
   color: #fff;
 }
 
 .contact-sub-title {
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
   color: #fff;
+  text-align: center;
+  width: 569px;
+}
+
+.mt-24 {
+  margin-top: 24px;
 }
 
 .contact-form {
-  margin-top: 87px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact-form input {
@@ -386,6 +424,7 @@ nav ul li span {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+  width: 447px;
 }
 
 .contact-form textarea {
@@ -396,29 +435,94 @@ nav ul li span {
   line-height: 24px;
   color: #172b4d;
   height: 190px;
+  width: 447px;
 }
 
 /* medium screen resolution */
-/* @media (max-width: 1452px) {
-  .canopy {
-      width: 90%;
-    }
-} */
-/* medium screen resolution */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1276px) {
+  .background-image {
+    padding: 0 80px;
+  }
+
   .container {
     padding: 26px 80px;
+  }
+
+  .card {
+    height: fit-content;
+  }
+
+  .card-sub-title {
+    font-size: 34px;
+    width: 100%;
+  }
+
+  .canopy {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .dot {
+    align-self: center;
+    border-radius: 50%;
+    background-color: #c1c7d0;
+    width: 8px;
+    height: 8px;
+    margin: 0 7px;
+  }
+}
+
+/* large screen */
+@media (max-width: 1130px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+
+  .flex-basis-5 {
+    flex-basis: 0;
+    padding-right: 0;
+  }
+
+  .flex-basis-7 {
+    flex-basis: 0;
+  }
+
+  .lang {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1475px) {
+  .row {
+    margin-bottom: 142px;
   }
 }
 
 /* mobile screen resolution */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .mt-24 {
+    margin-top: 84px;
+  }
+
+  .weight--600--500 {
+    font-weight: 600;
+  }
+
+  .pt-114 {
+    padding: 114px 0 0 0;
+  }
+
   .background-image {
     height: calc(718px - 92px);
     background-image: url('./assets/images/mobile-bg-1.svg');
-  }
-
-  .container-fluid {
     padding: 26px 24px;
   }
 
@@ -432,7 +536,7 @@ nav ul li span {
     width: 90%;
   }
 
-  .container .fa-solid {
+  .container .fa-bars {
     display: block;
   }
 
@@ -440,17 +544,35 @@ nav ul li span {
     display: none;
   }
 
+  .row {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 88px;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
-    height: auto;
     padding: 16px 16px 24px 16px;
+
+  }
+
+  .card:nth-child(even) {
+    flex-direction: column;
   }
 
   .card img {
     width: 100%;
     height: 100%;
     padding-right: 0;
+    flex-basis: auto;
+  }
+
+  .card aside {
+    flex-basis: auto;
+    padding: 0 0 0 0;
   }
 
   .card-sub-title {
@@ -458,6 +580,12 @@ nav ul li span {
     line-height: 44px;
     color: #172b4d;
     width: 80%;
+  }
+
+  .card-title {
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
   }
 
   .canopy {
@@ -472,7 +600,81 @@ nav ul li span {
     color: #344563;
   }
 
+  footer {
+    margin-top: calc(114px - 26px);
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+
+  .flex-basis-5 {
+    flex-basis: 0;
+    padding-right: 0;
+  }
+
+  .flex-basis-7 {
+    flex-basis: 0;
+  }
+
+  .no-nav {
+    margin-top: 60px;
+  }
+
+  .no-nav ul {
+    flex-direction: column;
+    margin: 36px 0;
+  }
+
+  .no-nav ul li {
+    flex-direction: row;
+    align-items: center;
+    margin: 12px 0px 0 0;
+    width: auto;
+  }
+
+  .no-nav ul li span {
+    margin-top: 0px;
+    margin-left: 16px;
+  }
+
+  .language {
+    color: #000;
+  }
+
+  .lang {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lang li {
+    margin-bottom: 0;
+  }
+
   .contact-bg-color {
-    text-align: left;
+    background-image: url('./assets/images/contact-1.svg');
+    background-size: contain;
+    background-position: right;
+    padding: 125px 0 45px 0;
+    margin-top: 113.85px;
+  }
+
+  .contact-sub-title {
+    width: auto;
+  }
+
+  .contact-form {
+    align-items: stretch;
+  }
+
+  .contact-form input {
+    width: auto;
+  }
+
+  .contact-form textarea {
+    width: auto;
   }
 }
