@@ -88,34 +88,27 @@
 }
 
 .container {
-  padding: 25px 142px;
+  padding: 25px 155px;
 }
 
 .height-100vh {
   height: calc(100vh - 10vh);
 }
 
-.width-920 {
-  width: 920px;
-}
-
-.row {
-  display: grid;
-  grid-template-rows: auto;
-  row-gap: 50%;
-}
-
 .card {
   background-color: #fff;
-  padding: 16px 16px 24px 16px;
+  padding: 16px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  height: 496px;
 }
 
 .card-sub-title {
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
   width: 80%;
 }
 
@@ -126,11 +119,12 @@
 }
 
 .canopy {
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 24px;
   color: #7a869a;
   margin: 20px 0;
-  width: 85%;
+  width: 65%;
+  font-weight: 500;
 }
 
 .canopy-bold {
@@ -153,6 +147,20 @@ custom style should incase is not created
   background-color: #e5e5e5;
 }
 
+.background-image {
+  height: calc(916px - 92px);
+  background-color: #fff;
+  background-image: url('./assets/images/mobile-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-bottom-left-radius: 50px;
+}
+
+.container-fluid {
+  padding: 0 260px;
+}
+
 .my-logo {
   font-size: 18px;
   line-height: 20px;
@@ -160,9 +168,20 @@ custom style should incase is not created
 
 .nav {
   background-color: #fff;
-
-  /* box-shadow: 0rem 0rem 1rem #E5E5E5; */
+  box-shadow: 0rem 0rem 1rem #E5E5E5;
   height: 72px;
+}
+
+.nav-link {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.nav-link li a {
+  margin: 0 32px;
+  text-decoration: none;
+  color: #344563;
 }
 
 .container .fa-solid {
@@ -174,7 +193,7 @@ custom style should incase is not created
   line-height: 60px;
   letter-spacing: 0.37px;
   color: #091e42;
-  width: 50%;
+  width: 39%;
 }
 
 .nav-sub-heading {
@@ -192,6 +211,12 @@ custom style should incase is not created
   margin-right: 17px;
   font-size: 25px;
   color: #505f79;
+}
+
+.row {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 88px;
 }
 
 .lang {
@@ -280,7 +305,7 @@ aside.w-50 {
   padding: 30px 0;
 }
 
-nav ul li {
+.no-nav ul li {
   background-color: #f7f7f9;
   border-radius: 8px;
   padding: 14px;
@@ -297,8 +322,9 @@ nav ul li img {
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  padding-right: 46px;
 }
 
 nav ul li span {
@@ -323,6 +349,12 @@ nav ul li span {
   background-position: right;
   padding: 125px 0 45px 0;
   margin-top: 113.85px;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-title {
@@ -367,6 +399,12 @@ nav ul li span {
 }
 
 /* medium screen resolution */
+/* @media (max-width: 1452px) {
+  .canopy {
+      width: 90%;
+    }
+} */
+/* medium screen resolution */
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     padding: 26px 80px;
@@ -376,13 +414,12 @@ nav ul li span {
 /* mobile screen resolution */
 @media (max-width: 767px) {
   .background-image {
-    background-color: #fff;
-    background-image: url('./assets/images/mobile-bg.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-bottom-left-radius: 50px;
-    margin-bottom: calc(114px - 26px);
+    height: calc(718px - 92px);
+    background-image: url('./assets/images/mobile-bg-1.svg');
+  }
+
+  .container-fluid {
+    padding: 26px 24px;
   }
 
   .container {
@@ -392,7 +429,6 @@ nav ul li span {
   .nav-heading {
     font-size: 40px;
     line-height: 52px;
-    letter-spacing: 0.37px;
     width: 90%;
   }
 
@@ -400,9 +436,43 @@ nav ul li span {
     display: block;
   }
 
-  .row {
-    display: grid;
-    grid-template-rows: auto;
-    row-gap: 88px;
+  .nav-link {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 16px 16px 24px 16px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+  }
+
+  .card-sub-title {
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    width: 80%;
+  }
+
+  .canopy {
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+    margin: 20px 0;
+    width: 85%;
+  }
+
+  .canopy-bold {
+    color: #344563;
+  }
+
+  .contact-bg-color {
+    text-align: left;
   }
 }
