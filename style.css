@@ -169,11 +169,10 @@ custom style should incase is not created
   background-position: center;
   background-size: contain;
   border-bottom-left-radius: 50px;
-  padding: 0 260px;
 }
 
 .container-fluid {
-  max-width: 950px;
+  max-width: 1010px;
 }
 
 .my-logo {
@@ -437,8 +436,44 @@ nav ul li img {
   width: 447px;
 }
 
+/* large screen */
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+
+  .flex-basis-5 {
+    flex-basis: 447px;
+    padding-right: 0;
+  }
+
+  .flex-basis-7 {
+    flex: auto;
+  }
+
+  .lang {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lang li {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 26px 2%;
+  }
+
+  .container-fluid {
+    max-width: 80%;
+  }
+}
+
 /* medium screen resolution */
-@media (min-width: 768px) and (max-width: 1276px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   .background-image {
     padding: 0 80px;
   }
@@ -449,6 +484,28 @@ nav ul li img {
 
   .card {
     height: fit-content;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 24px 16px;
+  }
+
+  .card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+    flex-basis: auto;
+  }
+
+  .card aside {
+    flex-basis: auto;
+    padding: 0 0 0 0;
   }
 
   .card-sub-title {
@@ -469,46 +526,39 @@ nav ul li img {
     height: 8px;
     margin: 0 7px;
   }
-}
 
-/* large screen */
-@media (max-width: 1130px) {
   .about-me {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: none;
+    padding: 0 26px;
   }
 
   .flex-basis-5 {
-    flex-basis: 0;
-    padding-right: 0;
+    flex: auto;
   }
 
   .flex-basis-7 {
-    flex-basis: 0;
-  }
-
-  .lang {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .lang li {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1475px) {
-  .row {
-    margin-bottom: 142px;
+    flex: auto;
   }
 }
 
 /* mobile screen resolution */
-@media (max-width: 768px) {
-  .mt-24 {
-    margin-top: 84px;
+@media (max-width: 767px) {
+  .background-image {
+    height: 718px;
+    background-image: url('./assets/images/mobile-bg-1.svg');
+    background-position: top;
+    background-size: contain;
+  }
+
+  .container {
+    padding: 26px 24px;
+  }
+
+  .container-fluid {
+    max-width: 90%;
   }
 
   .weight--600--500 {
@@ -519,14 +569,8 @@ nav ul li img {
     padding: 114px 0 0 0;
   }
 
-  .background-image {
-    height: calc(718px - 92px);
-    background-image: url('./assets/images/mobile-bg-1.svg');
-    padding: 26px 24px;
-  }
-
-  .container {
-    padding: 26px 24px;
+  .mt-24 {
+    margin-top: 84px;
   }
 
   .nav-heading {
@@ -555,6 +599,7 @@ nav ul li img {
     display: flex;
     flex-direction: column;
     padding: 16px 16px 24px 16px;
+    height: fit-content;
   }
 
   .card:nth-child(even) {
