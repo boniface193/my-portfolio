@@ -483,13 +483,10 @@ nav ul li img {
   }
 
   .card {
-    height: fit-content;
-  }
-
-  .card {
     display: flex;
     flex-direction: column;
     padding: 16px 16px 24px 16px;
+    height: fit-content;
   }
 
   .card:nth-child(even) {
