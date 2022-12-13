@@ -108,6 +108,13 @@
   display: flex;
   flex-direction: row;
   height: auto;
+  cursor: pointer;
+}
+
+/* Hi, Dave please i want you to add an animation to this card that will enable it to show the style  below on 1seconds */
+.card:hover {
+  box-shadow: 0 0 40px rgba(64, 83, 252, 0.24);
+  border: 2px solid #a7aeff;
 }
 
 .card:nth-child(even) {
