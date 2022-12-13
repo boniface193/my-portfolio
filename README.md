@@ -37,6 +37,7 @@ After you're finished please remove all the comments and instructions!
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+   - [🚀 Live Demo](#live-demo)
     - [Tech Stack](#tech-stack)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -56,6 +57,15 @@ After you're finished please remove all the comments and instructions!
 **[my-portfolio]**
 
 ## 🛠 Built With <a name="built-with"></a>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+- [Live Demo Link](https://boniface193.github.io/my-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tech Stack <a name="tech-stack"></a>
 
