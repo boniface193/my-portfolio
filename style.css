@@ -108,13 +108,6 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  cursor: pointer;
-}
-
-/* Hi, Dave please i want you to add an animation to this card that will enable it to show the style  below on 1seconds */
-.card:hover {
-  box-shadow: 0px 0px 40px rgba(64, 83, 252, 0.24);
-  border: 2px solid #a7aeff;
 }
 
 .card:nth-child(even) {
@@ -269,6 +262,10 @@ button.btn:hover {
   background-color: #6070ff;
   color: #fff;
   border: 1px solid #7f8cff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  transition-property: background-color;
+  transition-duration: 0.8s;
+  /* transition-delay: 0.2s; */
 }
 
 button.btn:disabled {
@@ -281,6 +278,9 @@ button.btn:active {
   background-color: #2230d2;
   color: #fff;
   border: 1px solid #5e6c84;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.8s;
 }
 
 footer {
