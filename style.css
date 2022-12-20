@@ -190,12 +190,23 @@ custom style should incase is not created
   font-size: 15px;
   line-height: 20px;
   text-align: center;
+  display: flex;
+  font-weight: 500;
 }
 
-.nav-link li a {
+.nav-link li {
   margin: 0 32px;
+}
+
+
+
+.nav-link li a {
   text-decoration: none;
   color: #344563;
+}
+
+i.fa-close {
+  display: none;
 }
 
 .container .fa-bars {
@@ -557,8 +568,39 @@ nav ul li img {
     background-size: contain;
   }
 
+  .nav .d-none {
+    display: none;
+  }
+
   .container {
     padding: 26px 24px;
+  }
+
+  .sideBar {
+    background-color: #6070ff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
+    animation: slideIn 0.5s forwards;
+  }
+
+  @keyframes slideIin {
+    100% {
+      left: 0;
+      right: 40%;
+    }
+  }
+
+  .sideBar>.fas {
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    justify-content: end;
+    padding: 62px 38px;
   }
 
   .container-fluid {
@@ -588,7 +630,25 @@ nav ul li img {
   }
 
   .nav-link {
-    display: none;
+    position: fixed;
+    top: 20%;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 28px;
+  }
+
+  .nav-link li {
+    padding-bottom: 40px;
+    margin: 0;
+
+  }
+
+  .nav-link li a {
+    color: #fff;
+    padding-bottom: 40px;
   }
 
   .row {
