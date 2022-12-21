@@ -7,8 +7,8 @@ function openBar() {
   sideBar.classList.toggle('d-none');
 }
 
-navLinkLi.forEach(i => {
-  i.addEventListener('click', function() {
-    openBar()
-  })
+navLinkLi.forEach((i) => {
+  i.addEventListener('click', () => {
+    openBar();
+  });
 });
