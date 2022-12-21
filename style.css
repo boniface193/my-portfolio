@@ -611,7 +611,7 @@ nav ul li img {
     }
   }
 
-  .sideBar>.fas {
+  .sideBar > .fas {
     color: #fff;
     font-size: 28px;
     display: flex;
@@ -619,9 +619,9 @@ nav ul li img {
     padding: 25px;
   }
 
-    .sideBar>.fas:hover {
-      cursor: pointer;
-    }
+  .sideBar > .fas:hover {
+    cursor: pointer;
+  }
 
   .container-fluid {
     max-width: 90%;
