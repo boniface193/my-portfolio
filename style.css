@@ -587,17 +587,31 @@ nav ul li img {
     bottom: 0;
     mix-blend-mode: multiply;
     backdrop-filter: blur(8px);
-    animation: slideIn 0.5s forwards;
+    animation-duration: 0.3s;
+    animation-name: slidein;
   }
 
-  @keyframes slideIin {
-    100% {
-      left: 0;
-      right: 40%;
+  @keyframes slidein {
+    from {
+      position: fixed;
+      z-index: 1;
+      width: 100px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    to {
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+      right: 0;
+      top: 0;
+      bottom: 0;
     }
   }
 
-  .sideBar > .fas {
+  .sideBar>.fas {
     color: #fff;
     font-size: 28px;
     display: flex;
@@ -645,6 +659,18 @@ nav ul li img {
   .nav-link li {
     padding-bottom: 40px;
     margin: 0;
+    animation-duration: 1.8s;
+    animation-name: fadein;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 3;
+    }
   }
 
   .nav-link li a {
