@@ -150,6 +150,12 @@ Ikechukwu
 - Twitter: [@bidtechnologies](https://twitter.com/bidtechnologies)
 - LinkedIn: [boniface-ikechukwu](https://www.linkedin.com/in/boniface-ikechukwu/)
 
+👤 **Author2**
+Asiimwe Ben
+
+- GitHub: [@boniface193](https://github.com/King-Benx)
+- LinkedIn: [boniface-ikechukwu](https://www.linkedin.com/in/benard-asiimwe-bataringaya-4b673672/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
