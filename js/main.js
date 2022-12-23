@@ -40,10 +40,12 @@ formValidate.addEventListener('submit', (params) => {
   const allInput = Array.from(formValidate.querySelectorAll('input'));
   const isLowerCase = allInput[1];
 
-  if (isLowerCase.value != isLowerCase.value.toLowerCase()) {
+  if (isLowerCase.value !== isLowerCase.value.toLowerCase()) {
     const errorMsg = document.querySelector('.error');
-
+    errorMsg.innerText = 'Please make sure your email address is in lower case';
+    errorMsg.classList.toggle('d-none');
     params.preventDefault();
     return false;
   }
+  return true;
 });
