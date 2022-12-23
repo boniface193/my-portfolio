@@ -747,6 +747,10 @@ button .fa-github {
     padding: 25px;
   }
 
+  .sideBar > .fas:hover {
+    cursor: pointer;
+  }
+
   .container-fluid {
     max-width: 90%;
   }
