@@ -1,4 +1,4 @@
-export const projectInfo = [
+const projectInfo = [
   {
     id: '1',
     image: './assets/images/Snapshoot-5.svg',
@@ -9,7 +9,8 @@ export const projectInfo = [
       yearCompleted: '2015',
     },
     description: {
-      short: 'A daily selection of privately personalized reads; no accounts or sign- ups required.',
+      short:
+        'A daily selection of privately personalized reads; no accounts or sign- ups required.',
       long: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vero odio corporis natus mollitia, quidem est sit accusantium veniam porro, minima dolorum nostrum ut. Ea earum sapiente aut iste iure consectetur, laborum dignissimos, voluptatibus, nostrum cupiditate reprehenderit culpa porro? Voluptate ab, accusantium eos consequuntur ea praesentium officiis laudantium libero voluptates facilis eligendi explicabo quod, expedita sit, reprehenderit cumque eveniet tempora reiciendis laboriosam optio obcaecati nostrum delectus. Repudiandae, quae a quibusdam assumenda ipsum natus atque. Voluptates explicabo laudantium molestiae animi ipsa odio architecto non necessitatibus voluptatibus nihil quas iusto illum, similique exercitationem qui quasi? Nobis sit quod hic iusto, voluptates suscipit.',
     },
     language: ['html', 'css', 'javaScript'],
@@ -29,7 +30,8 @@ export const projectInfo = [
       yearCompleted: '2015',
     },
     description: {
-      short: 'A daily selection of privately personalized reads; no accounts or sign- ups required.',
+      short:
+        'A daily selection of privately personalized reads; no accounts or sign- ups required.',
       long: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vero odio corporis natus mollitia, quidem est sit accusantium veniam porro, minima dolorum nostrum ut. Ea earum sapiente aut iste iure consectetur, laborum dignissimos, voluptatibus, nostrum cupiditate reprehenderit culpa porro? Voluptate ab, accusantium eos consequuntur ea praesentium officiis laudantium libero voluptates facilis eligendi explicabo quod, expedita sit, reprehenderit cumque eveniet tempora reiciendis laboriosam optio obcaecati nostrum delectus. Repudiandae, quae a quibusdam assumenda ipsum natus atque. Voluptates explicabo laudantium molestiae animi ipsa odio architecto non necessitatibus voluptatibus nihil quas iusto illum, similique exercitationem qui quasi? Nobis sit quod hic iusto, voluptates suscipit.',
     },
     language: ['html', 'Ruby on rails', 'css', 'javaScript'],
@@ -49,7 +51,8 @@ export const projectInfo = [
       yearCompleted: '2015',
     },
     description: {
-      short: 'A daily selection of privately personalized reads; no accounts or sign- ups required.',
+      short:
+        'A daily selection of privately personalized reads; no accounts or sign- ups required.',
       long: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vero odio corporis natus mollitia, quidem est sit accusantium veniam porro, minima dolorum nostrum ut. Ea earum sapiente aut iste iure consectetur, laborum dignissimos, voluptatibus, nostrum cupiditate reprehenderit culpa porro? Voluptate ab, accusantium eos consequuntur ea praesentium officiis laudantium libero voluptates facilis eligendi explicabo quod, expedita sit, reprehenderit cumque eveniet tempora reiciendis laboriosam optio obcaecati nostrum delectus. Repudiandae, quae a quibusdam assumenda ipsum natus atque. Voluptates explicabo laudantium molestiae animi ipsa odio architecto non necessitatibus voluptatibus nihil quas iusto illum, similique exercitationem qui quasi? Nobis sit quod hic iusto, voluptates suscipit.',
     },
     language: ['html', 'Ruby on rails', 'css', 'javaScript'],
@@ -69,7 +72,8 @@ export const projectInfo = [
       yearCompleted: '2015',
     },
     description: {
-      short: 'A daily selection of privately personalized reads; no accounts or sign- ups required.',
+      short:
+        'A daily selection of privately personalized reads; no accounts or sign- ups required.',
       long: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vero odio corporis natus mollitia, quidem est sit accusantium veniam porro, minima dolorum nostrum ut. Ea earum sapiente aut iste iure consectetur, laborum dignissimos, voluptatibus, nostrum cupiditate reprehenderit culpa porro? Voluptate ab, accusantium eos consequuntur ea praesentium officiis laudantium libero voluptates facilis eligendi explicabo quod, expedita sit, reprehenderit cumque eveniet tempora reiciendis laboriosam optio obcaecati nostrum delectus. Repudiandae, quae a quibusdam assumenda ipsum natus atque. Voluptates explicabo laudantium molestiae animi ipsa odio architecto non necessitatibus voluptatibus nihil quas iusto illum, similique exercitationem qui quasi? Nobis sit quod hic iusto, voluptates suscipit.',
     },
     language: ['html', 'Ruby on rails', 'css', 'javaScript'],
@@ -80,3 +84,5 @@ export const projectInfo = [
     },
   },
 ];
+
+export default projectInfo;
