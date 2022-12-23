@@ -27,17 +27,19 @@ projectInfo.forEach((element, index) => {
             ${element.language.map((l) => `<li>${l}</li>`).join('')}
             </ul>
             ${element.buttons.seeProject
-    ? '<button type="button" class="btn weight--500">See Project</button>'
-    : ''
-}
+      ? '<button type="button" class="btn weight--500">See Project</button>'
+      : ''
+    }
       </aside>
     </article>`;
 });
 
 getSingleProject();
 
+const allInput = Array.from(formValidate.querySelectorAll('input'));
+const msgArea = formValidate.querySelector('textarea')
+
 formValidate.addEventListener('submit', (params) => {
-  const allInput = Array.from(formValidate.querySelectorAll('input'));
   const isLowerCase = allInput[1];
 
   if (isLowerCase.value !== isLowerCase.value.toLowerCase()) {
@@ -47,5 +49,14 @@ formValidate.addEventListener('submit', (params) => {
     params.preventDefault();
     return false;
   }
+
+  const payLoads = {
+    fullname: allInput[0].value,
+    email: isLowerCase.value,
+    message: msgArea.value
+  }
+
+  localStorage.setItem("payLoads", JSON.stringify(payLoads))
+
   return true;
 });
