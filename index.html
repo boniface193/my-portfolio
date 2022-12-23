@@ -143,7 +143,8 @@
                     </aside>
 
                     <aside>
-                        <form action="https://formspree.io/f/xknedbwy" method="post" class="contact-form mt-24">
+                        <form id="validateForm" action="https://formspree.io/f/xknedbwy" method="post"
+                            class="contact-form mt-24">
                             <label for="" class="d-none">Full name</label>
                             <input type="text" maxlength="30" required name="fullName" placeholder="your full name"
                                 class="weight--400">
@@ -153,9 +154,9 @@
                             <label for="" class="d-none">Text Area</label>
                             <textarea name="msg" maxlength="500" required class="weight--400"
                                 placeholder="Write your message here"></textarea>
-
+                            <div class="mt-12 error d-none"></div>
                             <div>
-                                <button type="button" class="btn weight--500" type="submit">Get in Touch</button>
+                                <button class="btn weight--500" type="submit">Get in Touch</button>
                             </div>
                         </form>
                     </aside>

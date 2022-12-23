@@ -570,7 +570,13 @@ button .fa-github {
   height: 190px;
   width: 447px;
 }
-
+.error {
+  background-color: palevioletred;
+  opacity: 0.5px;
+  text-align: center;
+  color: #fff;
+  padding: 8px;
+}
 /* large screen */
 @media (min-width: 1000px) and (max-width: 1280px) {
   .grid-container {
