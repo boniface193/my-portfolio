@@ -39,6 +39,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
    - [🚀 Live Demo](#live-demo)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -80,6 +81,14 @@ html
 </details>
 
 <!-- Features -->
+### Key Features <a name="key-features"></a>
+
+> preserve data in the browser.
+
+- When the user changes the content of any input field, the data is saved to the local storage
+- When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
