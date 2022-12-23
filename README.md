@@ -45,6 +45,7 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Install](#install)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -164,6 +165,22 @@ Asiimwe Ben
 
 - GitHub: [@boniface193](https://github.com/King-Benx)
 - LinkedIn: [boniface-ikechukwu](https://www.linkedin.com/in/benard-asiimwe-bataringaya-4b673672/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Client side validation to validate contact form
+
+- [ ] When the user submits the form, you check if the email is in lower case.
+- [ ] If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
+
+> Preserve data in the browser
+
+- [ ] When the user changes the content of any input field, the data is saved to the local storage.
+- [ ] When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
