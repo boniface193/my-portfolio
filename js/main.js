@@ -5,7 +5,7 @@ import sidebar from './sidebar.js';
 sidebar();
 
 const portfolioProjects = document.querySelector('#Portfolio');
-const formValidate = document.querySelector('#validateForm')
+const formValidate = document.querySelector('#validateForm');
 
 projectInfo.forEach((element, index) => {
   portfolioProjects.firstElementChild.innerHTML += `<article class="d-flex card">
@@ -27,26 +27,23 @@ projectInfo.forEach((element, index) => {
             ${element.language.map((l) => `<li>${l}</li>`).join('')}
             </ul>
             ${element.buttons.seeProject
-      ? '<button type="button" class="btn weight--500">See Project</button>'
-      : ''
-    }
+    ? '<button type="button" class="btn weight--500">See Project</button>'
+    : ''
+}
       </aside>
     </article>`;
 });
 
 getSingleProject();
 
-
-formValidate.addEventListener('submit', function (params) {
-  const allInput = Array.from(formValidate.querySelectorAll('input'))
-  const isLowerCase = allInput[1]
+formValidate.addEventListener('submit', (params) => {
+  const allInput = Array.from(formValidate.querySelectorAll('input'));
+  const isLowerCase = allInput[1];
 
   if (isLowerCase.value != isLowerCase.value.toLowerCase()) {
-    const errorMsg = document.querySelector('.error')
-    errorMsg.innerText = 'Please make sure your email address is in lower case'
-    errorMsg.classList.toggle('d-none')
+    const errorMsg = document.querySelector('.error');
 
-    params.preventDefault()
-    return false
+    params.preventDefault();
+    return false;
   }
-})
+});
