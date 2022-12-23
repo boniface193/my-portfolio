@@ -26,10 +26,11 @@ projectInfo.forEach((element, index) => {
             <ul class="list-style-type-none d-flex lang padding-every-where weight--500">
             ${element.language.map((l) => `<li>${l}</li>`).join('')}
             </ul>
-            ${element.buttons.seeProject
-      ? '<button type="button" class="btn weight--500">See Project</button>'
-      : ''
-    }
+            ${
+  element.buttons.seeProject
+    ? '<button type="button" class="btn weight--500">See Project</button>'
+    : ''
+}
       </aside>
     </article>`;
 });
@@ -37,7 +38,7 @@ projectInfo.forEach((element, index) => {
 getSingleProject();
 
 const allInput = Array.from(formValidate.querySelectorAll('input'));
-const msgArea = formValidate.querySelector('textarea')
+const msgArea = formValidate.querySelector('textarea');
 
 formValidate.addEventListener('submit', (params) => {
   const isLowerCase = allInput[1];
@@ -53,10 +54,18 @@ formValidate.addEventListener('submit', (params) => {
   const payLoads = {
     fullname: allInput[0].value,
     email: isLowerCase.value,
-    message: msgArea.value
-  }
+    message: msgArea.value,
+  };
 
-  localStorage.setItem("payLoads", JSON.stringify(payLoads))
+  localStorage.setItem('payLoads', JSON.stringify(payLoads));
 
   return true;
 });
+
+const getLocalItems = JSON.parse(localStorage.getItem('payLoads'));
+
+if (getLocalItems) {
+  allInput[0].value = getLocalItems.fullname;
+  allInput[1].value = getLocalItems.email;
+  msgArea.value = getLocalItems.message;
+}
