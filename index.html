@@ -9,24 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/main.js" type="module"></script>
     <title>Ikechukwu | Full stack Engineer</title>
 </head>
 
 <body>
-    <section class="background-color">
+    <section class="background-color" id="top">
         <header>
             <nav class="nav">
                 <div class="container d-flex justify-content-between">
                     <a href="#" class="my-logo text-decoration-none text--primary weight--700">My Logo</a>
                     <div class="sideBar d-none" id="sideBar">
-                        <i onclick="openBar()" class="fas fa-close"></i>
+                        <i id="openBar" class="fas fa-close"></i>
                     </div>
                     <ul class="list-style-type-none nav-link d-none" id="navLink">
                         <li><a href="#Portfolio">Portfolio</a></li>
                         <li><a href="#About">About</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
-                    <i class="fa-solid fa-bars text--primary justify-content-center d-flex" onclick="openBar()"></i>
+                    <i class="fa-solid fa-bars text--primary justify-content-center d-flex" id="openBar"></i>
                 </div>
             </nav>
         </header>
@@ -56,106 +57,7 @@
 
         <main class="container" id="Portfolio">
             <div class="row pt-114">
-                <article class="card">
-                    <img src="./assets/images/Snapshoot-5.svg" alt="first project image">
-                    <aside class="mt-12">
-                        <div class="weight--700 card-sub-title">
-                            Tonic
-                        </div>
-                        <ul class="list-style-type-none d-flex weight--600--500 canopy">
-                            <li class="canopy-bold">CANOPY</li>
-                            <li class="dot"></li>
-                            <li class="">Back End Dev</li>
-                            <li class="dot"></li>
-                            <li>2015</li>
-                        </ul>
-                        <p class="card-title weight--400">A daily selection of privately personalized reads; no accounts
-                            or sign-ups required.</p>
-                        <ul class="list-style-type-none d-flex lang weight--500">
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javaScript</li>
-                        </ul>
-                        <button type="button" class="btn weight--500">See Project</button>
-                    </aside>
-                </article>
 
-                <article class="card">
-                    <img src="./assets/images/Snapshoot2.svg" alt="second project image">
-                    <aside class="mt-12">
-                        <div class="weight--700 card-sub-title">
-                            Multi-Post
-                            Stories
-                        </div>
-                        <ul class="list-style-type-none d-flex weight--600--500 canopy">
-                            <li class="canopy-bold">CANOPY</li>
-                            <li class="dot"></li>
-                            <li class="">Back End Dev</li>
-                            <li class="dot"></li>
-                            <li>2015</li>
-                        </ul>
-                        <p class="card-title weight--400">A daily selection of privately personalized reads; no accounts
-                            or sign-ups required.</p>
-                        <ul class="list-style-type-none d-flex lang weight--500">
-                            <li>html</li>
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>javaScript</li>
-                        </ul>
-                        <button type="button" class="btn weight--500">See Project</button>
-                    </aside>
-                </article>
-
-                <article class="card">
-                    <img src="./assets/images/Snapshoot Portfolio.svg" alt="third project image">
-                    <aside class="mt-12">
-                        <div class="weight--700 card-sub-title">
-                            Tonic
-                        </div>
-                        <ul class="list-style-type-none d-flex weight--600--500 canopy">
-                            <li class="canopy-bold">CANOPY</li>
-                            <li class="dot"></li>
-                            <li class="">Back End Dev</li>
-                            <li class="dot"></li>
-                            <li>2015</li>
-                        </ul>
-                        <p class="card-title weight--400">A daily selection of privately personalized reads; no accounts
-                            or sign-ups required.</p>
-                        <ul class="list-style-type-none d-flex lang weight--500">
-                            <li>html</li>
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>javaScript</li>
-                        </ul>
-                        <button type="button" class="btn weight--500">See Project</button>
-                    </aside>
-                </article>
-
-                <article class="card">
-                    <img src="./assets/images/Snapshoot.svg" alt="fourth project image">
-                    <aside class="mt-12">
-                        <div class="weight--700 card-sub-title">
-                            Multi-Post
-                            Stories
-                        </div>
-                        <ul class="list-style-type-none d-flex weight--600--500 canopy">
-                            <li class="canopy-bold">CANOPY</li>
-                            <li class="dot"></li>
-                            <li class="">Back End Dev</li>
-                            <li class="dot"></li>
-                            <li>2015</li>
-                        </ul>
-                        <p class="card-title weight--400">A daily selection of privately personalized reads; no accounts
-                            or sign-ups required.</p>
-                        <ul class="list-style-type-none d-flex lang weight--500">
-                            <li>html</li>
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>javaScript</li>
-                        </ul>
-                        <button type="button" class="btn weight--500">See Project</button>
-                    </aside>
-                </article>
             </div>
         </main>
 
@@ -185,7 +87,7 @@
                             <li><a href="#"><i class="fa-brands fa-angellist"></i></a></li>
                         </ul>
 
-                        <button type="button" class=" btn mt-22">Get my resume</button>
+                        <button type="button" class="btn mt-22">Get my resume</button>
                     </aside>
                 </article>
 
@@ -241,7 +143,8 @@
                     </aside>
 
                     <aside>
-                        <form action="https://formspree.io/f/xknedbwy" method="post" class="contact-form mt-24">
+                        <form id="validateForm" action="https://formspree.io/f/xknedbwy" method="post"
+                            class="contact-form mt-24">
                             <label for="" class="d-none">Full name</label>
                             <input type="text" maxlength="30" required name="fullName" placeholder="your full name"
                                 class="weight--400">
@@ -251,9 +154,9 @@
                             <label for="" class="d-none">Text Area</label>
                             <textarea name="msg" maxlength="500" required class="weight--400"
                                 placeholder="Write your message here"></textarea>
-
+                            <div class="mt-12 error d-none"></div>
                             <div>
-                                <button type="button" class="btn weight--500" type="submit">Get in Touch</button>
+                                <button class="btn weight--500" type="submit">Get in Touch</button>
                             </div>
                         </form>
                     </aside>
@@ -261,7 +164,6 @@
             </section>
         </footer>
     </section>
-    <script src="./main.js"></script>
 </body>
 
 </html>

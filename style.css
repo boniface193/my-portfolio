@@ -15,6 +15,15 @@
   list-style-type: none;
 }
 
+.z-index-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .mt-12 {
   margin-top: 12px;
 }
@@ -25,6 +34,14 @@
 
 .mt-22 {
   margin-top: 22px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 .weight--400 {
@@ -99,15 +116,25 @@
   height: calc(100vh - 10vh);
 }
 
+.popup-card {
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .card {
   max-width: 1156px;
   background-color: #fff;
   padding: 16px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  display: flex;
   flex-direction: row;
-  height: auto;
+  height: max-content;
 }
 
 .card:hover {
@@ -121,7 +148,7 @@
 
 .card aside {
   flex-basis: 544px;
-  padding: 0 46px 0 46px;
+  padding: 0 46px;
 }
 
 .card-sub-title {
@@ -147,6 +174,11 @@
 
 .canopy-bold {
   color: #344563;
+  text-transform: uppercase;
+}
+
+.canopy-not-bold {
+  text-transform: capitalize;
 }
 
 .dot {
@@ -158,10 +190,6 @@
   margin: 0 12px;
 }
 
-/*
-this style here is where you should create your
-custom style should incase is not created
-*/
 .background-color {
   background-color: #f4f5f7;
 }
@@ -245,15 +273,17 @@ i.fa-close {
   display: grid;
   grid-template-rows: auto;
   row-gap: 142px;
-  justify-content: center;
   margin-bottom: 142px;
+  justify-content: center;
 }
 
 .lang {
   display: flex;
-  flex-direction: row;
-  padding: 25px 0;
   line-height: 16px;
+}
+
+.padding-every-where {
+  padding: 25px 0;
 }
 
 button {
@@ -349,6 +379,10 @@ footer {
   border: 0.3px solid #dfe1e6;
 }
 
+.hr-2 {
+  border: 0.3px solid #ebecf0;
+}
+
 aside.w-50 {
   margin: 23px 0;
   width: 90%;
@@ -364,10 +398,35 @@ nav ul li img {
   height: 48px;
 }
 
-.card img {
-  width: 544px;
-  height: 448px;
+.mt-24-card img {
+  margin-top: calc(36px - 20px);
+}
+
+.card img:nth-last-child(2) {
+  width: 100%;
+  height: 100%;
   flex-basis: 544px;
+}
+
+.popup-top {
+  position: fixed;
+  top: 3%;
+  left: 8%;
+  right: 8%;
+  bottom: 3%;
+  overflow-y: scroll;
+}
+
+.popup-top::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
 }
 
 .no-nav ul li span {
@@ -383,6 +442,18 @@ nav ul li img {
   border-radius: 8px;
   padding: 6px 12px;
   margin-right: 8px;
+}
+
+.grid-lang li {
+  background-color: #ebebff;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .no-nav ul li {
@@ -427,6 +498,50 @@ nav ul li img {
   margin-top: 24px;
 }
 
+.my-59 {
+  margin: 59px auto;
+}
+
+.mt-24-card {
+  padding: calc(24px - 16px);
+}
+
+button .fa-github {
+  font-size: 22px;
+  color: #6070ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.grid-lang {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 1em;
+  max-width: 450px;
+}
+
+.spa-btn {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+}
+
+.spa-btn button {
+  width: auto;
+  height: 45px;
+}
+
+.col-8 {
+  padding-right: 24px;
+}
+
+.mb-24 {
+  margin: 24px 0;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -456,8 +571,19 @@ nav ul li img {
   width: 447px;
 }
 
+.error {
+  background-color: palevioletred;
+  text-align: center;
+  color: #fff;
+  padding: 8px;
+}
+
 /* large screen */
 @media (min-width: 1000px) and (max-width: 1280px) {
+  .grid-container {
+    grid-template-columns: 62% 38%;
+  }
+
   .about-me {
     display: flex;
     flex-direction: row;
@@ -494,6 +620,15 @@ nav ul li img {
 
 /* medium screen resolution */
 @media (min-width: 767px) and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .grid-lang {
+    margin-top: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .background-image {
     padding: 0 80px;
   }
@@ -513,7 +648,7 @@ nav ul li img {
     flex-direction: column;
   }
 
-  .card img {
+  .card img:nth-last-child(2) {
     width: 100%;
     height: 100%;
     padding-right: 0;
@@ -522,7 +657,7 @@ nav ul li img {
 
   .card aside {
     flex-basis: auto;
-    padding: 0 0 0 0;
+    padding: 0 0;
   }
 
   .card-sub-title {
@@ -690,18 +825,22 @@ nav ul li img {
     margin-bottom: 0;
   }
 
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
   .card {
-    display: flex;
     flex-direction: column;
     padding: 16px 16px 24px 16px;
-    height: min-content;
+
+    /* height: min-content; */
   }
 
   .card:nth-child(even) {
     flex-direction: column;
   }
 
-  .card img {
+  .card img:nth-last-child(2) {
     width: 100%;
     height: 100%;
     padding-right: 0;
@@ -710,7 +849,7 @@ nav ul li img {
 
   .card aside {
     flex-basis: auto;
-    padding: 0 0 0 0;
+    padding: 0 0;
   }
 
   .card-sub-title {
