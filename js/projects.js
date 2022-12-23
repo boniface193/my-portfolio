@@ -46,7 +46,7 @@ ${singleProject.project.stack}</li>
                       <p class="card-title weight--400">
 ${singleProject.description.long}</p>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4 mt-12">
                       <ul class="list-style-type-none grid-lang weight--500">
                          ${singleProject.language
     .map((l) => `<li>${l}</li>`)
@@ -58,14 +58,12 @@ ${singleProject.description.long}</p>
                               class="btn d-flex justify-content-between align-items-center mr-10">
                               <span> See live</span>
                               <img src="./assets/images/Export.svg" alt="view live icon" width="24px"
-                                  height="24px" class="m-0">
+                                  height="24px" class="m-0 svg-img">
                           </button>
                           <button type="button"
-                              class="btn d-flex justify-content-between align-items-center"><span
-                                  >See Source</span>
+                              class="btn d-flex justify-content-between align-items-center">See Source
                               <i class="fa-brands fa-github"></i></button>
                       </div>
-
                   </div>
               </div>
             </div>
@@ -81,7 +79,7 @@ ${singleProject.description.long}</p>
             createPopupCard.remove();
             const getLastChild = Array.from(skipFirstChild);
             getLastChild[1].lastElementChild.remove();
-            window.reload();
+            window.location.reload();
           });
       });
     }

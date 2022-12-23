@@ -25,8 +25,7 @@ projectInfo.forEach((i, index) => {
             <ul class="list-style-type-none d-flex lang padding-every-where weight--500">
             ${i.language.map((l) => `<li>${l}</li>`).join('')}
             </ul>
-            ${
-  i.buttons.seeProject
+            ${i.buttons.seeProject
     ? '<button type="button" class="btn weight--500">See Project</button>'
     : ''
 }
