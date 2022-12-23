@@ -177,6 +177,11 @@ Asiimwe Ben
 - [ ] When the user submits the form, you check if the email is in lower case.
 - [ ] If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
 
+> Preserve data in the browser
+
+- [ ] When the user changes the content of any input field, the data is saved to the local storage.
+- [ ] When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
