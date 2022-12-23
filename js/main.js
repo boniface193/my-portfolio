@@ -36,8 +36,10 @@ projectInfo.forEach((element, index) => {
 
 getSingleProject();
 
+const allInput = Array.from(formValidate.querySelectorAll('input'));
+const msgArea = formValidate.querySelector('textarea');
+
 formValidate.addEventListener('submit', (params) => {
-  const allInput = Array.from(formValidate.querySelectorAll('input'));
   const isLowerCase = allInput[1];
 
   if (isLowerCase.value !== isLowerCase.value.toLowerCase()) {
@@ -47,5 +49,22 @@ formValidate.addEventListener('submit', (params) => {
     params.preventDefault();
     return false;
   }
+
+  const payLoads = {
+    fullname: allInput[0].value,
+    email: isLowerCase.value,
+    message: msgArea.value,
+  };
+
+  localStorage.setItem('payLoads', JSON.stringify(payLoads));
+
   return true;
 });
+
+const getLocalItems = JSON.parse(localStorage.getItem('payLoads'));
+
+if (getLocalItems) {
+  allInput[0].value = getLocalItems.fullname;
+  allInput[1].value = getLocalItems.email;
+  msgArea.value = getLocalItems.message;
+}
