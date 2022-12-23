@@ -60,3 +60,11 @@ formValidate.addEventListener('submit', (params) => {
 
   return true;
 });
+
+const getLocalItems = JSON.parse(localStorage.getItem('payLoads'));
+
+if (getLocalItems) {
+  allInput[0].value = getLocalItems.fullname;
+  allInput[1].value = getLocalItems.email;
+  msgArea.value = getLocalItems.message;
+}
