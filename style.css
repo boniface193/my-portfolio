@@ -16,9 +16,12 @@
 }
 
 .z-index-1 {
-  /* z-index: 1; */
   display: flex;
   justify-content: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .mt-12 {
@@ -406,11 +409,24 @@ nav ul li img {
 }
 
 .popup-top {
-  position: absolute;
-  top: 15%;
+  position: fixed;
+  top: 3%;
   left: 8%;
   right: 8%;
-  bottom: 0;
+  bottom: 3%;
+  overflow-y: scroll;
+}
+
+.popup-top::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
 }
 
 .no-nav ul li span {

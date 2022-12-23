@@ -1,66 +1,48 @@
-export function getSingleProject() {
-  const portfolioProjects = document.querySelector('#Portfolio')
-  const getAllPortfolioProjects = Array.from(portfolioProjects.firstElementChild.getElementsByTagName('button'))
+import { projectInfo } from './objects.js';
+
+export default function getSingleProject() {
+  const portfolioProjects = document.querySelector('#Portfolio');
+  const getAllPortfolioProjects = Array.from(portfolioProjects.firstElementChild.getElementsByTagName('button'));
   const main = document.querySelector('main');
 
-  getAllPortfolioProjects.forEach(i => {
-    if (i.innerHTML == 'See Project') {
-      i.addEventListener('click', function () {
-        const createPopupCard = document.createElement('div')
-        createPopupCard.setAttribute('class', 'popup-card')
-        main.prepend(createPopupCard)
+  getAllPortfolioProjects.forEach((element, index) => {
+    if (element.innerHTML == 'See Project') {
+      element.addEventListener('click', () => {
+        const createPopupCard = document.createElement('div');
+        createPopupCard.setAttribute('class', 'popup-card');
+        main.prepend(createPopupCard);
+
+        const singleProject = projectInfo[index];
 
         const createDivContainer = `
       <div class="popup-top z-index-1">
         <article class="card height">
           <div class="mt-24-card">
-              <div class="d-flex justify-content-end">
+              <div class="d-flex justify-content-end cursor-pointer">
                   <i class="fa-solid fa-xmark" id="closeProject" ></i>
               </div>
 
               <div>
                   <div class="weight--700 card-sub-title">
-                      Tonic
+                      ${singleProject.title}
                   </div>
                   <ul class="list-style-type-none d-flex weight--600--500 canopy">
-                      <li class="canopy-bold">Canopy</li>
+                      <li class="canopy-bold">${singleProject.project.projectTitle}</li>
                       <li class="dot"></li>
-                      <li class="canopy-not-bold">back end Dev</li>
+                      <li class="canopy-not-bold">${singleProject.project.stack}</li>
                       <li class="dot"></li>
-                      <li>2015</li>
+                      <li>${singleProject.project.yearCompleted}</li>
                   </ul>
               </div>
 
-              <img src="./assets/images/Snapshoot-5.svg" alt="project image" />
+              <img src="${singleProject.image}" alt="project image" />
               <div class="my-59 grid-container">
                   <div class="col-8">
-                      <p class="card-title weight--400">Lorem ipsum dolor sit, amet consectetur adipisicing
-                          elit.
-                          Modi, reprehenderit? Repudiandae optio asperiores nisi aliquid, aperiam libero
-                          deleniti
-                          voluptate officiis deserunt dolorem praesentium iure aspernatur inventore nam,
-                          maiores
-                          sapiente culpa vel beatae consectetur at, odio dolorum? Saepe delectus officiis quam
-                          repellat quibusdam laboriosam, labore esse. Repudiandae, distinctio deleniti animi
-                          hic
-                          nam et soluta beatae ab, voluptas voluptatem, quis delectus commodi? Facilis
-                          voluptate
-                          ut quia, praesentium id reprehenderit cum corporis facere saepe exercitationem
-                          adipisci,
-                          nobis nemo a tempore recusandae autem perspiciatis amet. Culpa impedit eum
-                          quibusdam,
-                          repellendus aliquam natus aspernatur cupiditate? Vel dolorem deserunt doloremque
-                          autem
-                          voluptas asperiores ratione ullam saepe?</p>
+                      <p class="card-title weight--400">${singleProject.description.long}</p>
                   </div>
                   <div class="col-4">
                       <ul class="list-style-type-none grid-lang weight--500">
-                          <li>html</li>
-                          <li>css</li>
-                          <li>javaScript</li>
-                          <li>github</li>
-                          <li>ruby</li>
-                          <li>bootstrap</li>
+                         ${singleProject.language.map((l) => `<li>${l}</li>`).join('')}
                       </ul>
                       <div class="hr-2 mb-24"></div>
                       <div class="spa-btn">
@@ -81,19 +63,17 @@ export function getSingleProject() {
             </div>
           </article>
         </div>
-        `
-        const skipFirstChild = main.childNodes
-        skipFirstChild[2].innerHTML += createDivContainer
+        `;
+        const skipFirstChild = main.childNodes;
+        skipFirstChild[2].innerHTML += createDivContainer;
 
-        document.querySelector('#closeProject').addEventListener('click', function () {
-          createPopupCard.remove()
-          const getLastChild = Array.from(skipFirstChild)
-          getLastChild[1].lastElementChild.remove()
-          location.reload()
-        })
-      })
+        document.querySelector('#closeProject').addEventListener('click', () => {
+          createPopupCard.remove();
+          const getLastChild = Array.from(skipFirstChild);
+          getLastChild[1].lastElementChild.remove();
+          location.reload();
+        });
+      });
     }
-  })
-
-
+  });
 }

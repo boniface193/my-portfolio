@@ -1,14 +1,14 @@
-import { projectInfo } from "./objects.js"
-import { getSingleProject } from "./projects.js"
-import { sidebar } from "./sidebar.js"
+import { projectInfo } from './objects.js';
+import { getSingleProject } from './projects.js';
+import { sidebar } from './sidebar.js';
 
-sidebar()
+sidebar();
 
-const portfolioProjects = document.querySelector('#Portfolio')
+const portfolioProjects = document.querySelector('#Portfolio');
 
 projectInfo.forEach((i, index) => {
-  portfolioProjects.firstElementChild.innerHTML +=
-    `<article class="d-flex card">
+  portfolioProjects.firstElementChild.innerHTML
+    += `<article class="d-flex card">
         <img src="${i.image}" alt="${index + 1} project image">
 
         <aside class="mt-12">
@@ -24,11 +24,11 @@ projectInfo.forEach((i, index) => {
             </ul>
             <p class="card-title weight--400">${i.description.short}</p>
             <ul class="list-style-type-none d-flex lang padding-every-where weight--500">
-            ${i.language.map(l => `<li>${l}</li>`).join("")}
+            ${i.language.map((l) => `<li>${l}</li>`).join('')}
             </ul>
-            ${i.buttons.seeProject ? `<button type="button" class="btn weight--500">See Project</button>` : ``}
+            ${i.buttons.seeProject ? '<button type="button" class="btn weight--500">See Project</button>' : ''}
         </aside>
-    </article>`
+    </article>`;
 });
 
-getSingleProject()
+getSingleProject();
