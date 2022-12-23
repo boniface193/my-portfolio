@@ -39,11 +39,13 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
    - [🚀 Live Demo](#live-demo)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -80,6 +82,14 @@ html
 </details>
 
 <!-- Features -->
+### Key Features <a name="key-features"></a>
+
+> preserve data in the browser.
+
+- When the user changes the content of any input field, the data is saved to the local storage
+- When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -158,6 +168,17 @@ Asiimwe Ben
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Client side validation to validate contact form
+
+- [ ] When the user submits the form, you check if the email is in lower case.
+- [ ] If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -173,7 +194,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
