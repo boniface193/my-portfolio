@@ -258,7 +258,7 @@ i.fa-close {
   line-height: 24px;
 }
 
-.fa-brands {
+ul .fa-brands {
   margin-right: 17px;
   font-size: 25px;
   color: #505f79;
@@ -286,7 +286,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   border: none;
-  padding: 16px;
+  padding: 16px 14px;
   border-radius: 8px;
   margin-top: 10px;
 }
@@ -830,6 +830,14 @@ button .fa-github {
     padding-right: 0;
   }
 
+  .long-text-hight {
+    height: 280px;
+  }
+
+  .overflow-y {
+    overflow-y: scroll;
+  }
+
   .mt-24-card {
     padding: 0;
   }
@@ -848,7 +856,8 @@ button .fa-github {
   }
 
   .spa-btn button {
-    font-size: 12px;
+    /* width: 100%; */
+    font-size: 15px;
     height: 45px;
   }
 

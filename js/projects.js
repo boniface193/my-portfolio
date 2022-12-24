@@ -43,10 +43,10 @@ ${singleProject.project.stack}</li>
               <img src="${singleProject.image}" alt="project image" />
               <div class="my-59 grid-container">
                   <div class="col-8">
-                      <p class="card-title weight--400">
+                      <p class="card-title weight--400 overflow-y long-text-hight">
 ${singleProject.description.long}</p>
                   </div>
-                  <div class="col-4 mt-12">
+                  <div class="col-4 mt-22">
                       <ul class="list-style-type-none grid-lang weight--500">
                          ${singleProject.language
     .map((l) => `<li>${l}</li>`)
